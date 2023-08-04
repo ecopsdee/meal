@@ -1,0 +1,18 @@
+cuisine: African,American,British, Cajun, Caribbean, Chinese, Eastern European, European, French, German, Greek, Indian, Irish,Italian, Japanese, Jewish, Korean, Latin American, Mediterranean, Mexican, Middle Eastern, Nordic, Southern, Spanish, Thai, Vietnamese
+diet: Gluten Free, Ketogenic,Vegetarian,Lacto-Vegetarian, Ovo-Vegetarian, Vegan, Pescetarian, Paleo, Primal, Low FODMAP, Whole30
+mineral: carbohydrates,protein,fat,alcohol,caffeine,copper,calcium,choline,cholesterol,fluoride,saturated fat,Vitamin A,Vitamin C,Vitamin D,Vitamin E,Vitamin K,Vitamin B1,Vitamin B2,Vitamin B5,Vitamin B3,Vitamin B6,Vitamin B12,fiber,folate,
+
+client:
+ key: e1b98e6e33df4278ba417cd79c9e60d3
+ recipes:
+  baseurl: https://api.spoonacular.com/recipes
+
+feign:
+ client:
+  config:
+   default:
+    loggerLevel: FULL
+
+logging:
+ level:
+  com.dexdee.meal.RecipeFeignClient: DEBUG
